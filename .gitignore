@@ -10,4 +10,4 @@
 *.vrb
 *.o
 a.out
-alarm
+timer

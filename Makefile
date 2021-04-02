@@ -1,3 +1,3 @@
-alarm : alarm.c font.h Makefile
-	cc -o alarm alarm.c font.c
+timer : timer.c font.h Makefile
+	cc -o timer timer.c font.c
 
