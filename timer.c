@@ -122,13 +122,13 @@ int main(int argc, char *argv[]) {
 
     /* タイマー割込みが発生した */
     if (almflag) {
-        time--;
-        tprint(time);
-        if (time==0) {
-          fputs("\a\a\a",stderr);    /* ベルを鳴らす */
-        }
-	almflag = FALSE;
-        alarm(1);
+      time--;
+      tprint(time);
+      if (time==0) {
+        fputs("\a\a\a",stderr);    /* ベルを鳴らす */
+      }
+      almflag = FALSE;
+      alarm(1);
     }
   }
 
