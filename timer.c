@@ -1,5 +1,5 @@
 /*
- * tserver.c : 時計サーバ
+ * timer.c : タイマープログラム（デフォルトでは3分タイマー）
  * 
  */
 
@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
   int time = 180;                /* 標準では３分タイマー */
 
   if (argc>2) {
-    fprintf(stderr, "Usage : %s <second>\n", argv[0]);
+    fprintf(stderr, "Usage : %s [<second>]\n", argv[0]);
     exit(1);
   }
 
